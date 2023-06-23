@@ -1,0 +1,22 @@
+[
+	{"n": 93, "title": "93 - April 2015", "files": [ {"type": "pdf", "file": "/pdf/93-april-2015.pdf"} ], "date": "April 2015"},
+
+	{"n": 98, "title": "98 - Juli 2016", "files": [ {"type": "pdf", "file": "/pdf/98-juli-2016.pdf"} ], "date": "Juli 2016"},
+
+	{"n": 100, "title": "100 - April 2017", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker_100_april_2017_def"} ], "date": "April 2017"},
+	{"n": 101, "title": "101 - September 2017", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker_101_september_2017"} ], "date": "September 2017"},
+	{"n": 102, "title": "102 - December 2017", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker-102-december-2017-drukproef-4"} ], "date": "December 2017"},
+	{"n": 103, "title": "103 - Maart 2018", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker_103_maart_2018"} ], "date": "March 2018"},
+	{"n": 104, "title": "104 - September 2018", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker_104_september_2019"} ], "date": "September 2018"},
+	{"n": 105, "title": "105 - December 2018", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker_105_december_2018"} ], "date": "December 2018"},
+	{"n": 106, "title": "106 - April 2019", "files": [ {"type": "issuu", "file": "https://issuu.com/dorpsraadserooskerke/docs/waker_106_april_2019_7ebce4802907b3"} ], "date": "April 2019"},
+
+	{"n": 111, "title": "111 - December 2020", "files": [ {"type": "pdf", "file": "/pdf/111-december-2020.pdf"}, {"type": "xhtml", "file": "/xhtml/Waker111/"} ], "date": "December 2020"},
+	{"n": 112, "title": "112 - April 2021", "files": [ {"type": "xhtml", "file": "/xhtml/Waker112/"} ], "date": "April 2021"},
+	{"n": 113, "title": "113 - September 2021", "files": [ {"type": "xhtml", "file": "/xhtml/Waker113/"} ], "date": "September 2021"},
+	{"n": 114, "title": "114 - December 2021", "files": [ {"type": "pdf", "file": "/pdf/114-december-2021.pdf"} ], "date": "December 2021"},
+	{"n": 115, "title": "115 - Mei 2022", "files": [ {"type": "pdf", "file": "/pdf/115-mei-2022.pdf"} ], "date": "May 2022"},
+	{"n": 115, "title": "116 - September 2022", "files": [ {"type": "pdf", "file": "/pdf/116-september-2022.pdf"} ], "date": "September 2022"},
+	{"n": 117, "title": "117 - December 2022", "files": [ {"type": "pdf", "file": "/pdf/117-december-2022.pdf"} ], "date": "December 2022"}
+	
+]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl-NL" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://code.jquery.com/jquery-3.5.1.js" charset="utf-8"></script>
+		<style>
+			#back {
+				float:left;
+				height:15.5pt;
+			}
+			#next {
+				float:right;
+				height:15.5pt;
+			}
+			#o {
+				padding: 0px;
+				margin: 0px;
+				border: none;
+				width: 100%;
+				height: calc( 100vh - 18.5pt );
+			}
+			body {
+				margin: 0px;
+				padding: 0px;
+			}
+		</style>
+		<title>Digitale Wakers</title>
+	</head>
+	<body>
+		<button id="back">&lt;</button>
+		<button id="next">&gt;</button>
+		<object id="o"></object>
+		<script>
+			const par = new URL(window.location.href);
+			const file = par.searchParams.get("file");
+			$.getJSON(`/wakers${fixName(file)}.json`, data);
+			let pub;
+			let current = 0;
+			const o = document.getElementById("o");
+			function data(data){
+				pub = data;
+				load();
+			}
+			function load(){
+				o.data=`/wakers${file}${pub[current]}`;
+			}
+			function next(){
+				if(! (current>=pub.length-1)){
+					current++;
+					load();
+				}
+				return current;
+			}
+			function back(){
+				if(!(current <= 0)){
+					current--;
+					load();
+				}
+				return current;
+			}
+			document.getElementById("next").addEventListener("click", next);
+			document.getElementById("back").addEventListener("click", back);
+			//https://stackoverflow.com/a/6680877
+			function fixName(site){
+				return site.replace(/\/$/, "");
+			} 
+			
+			
+		</script>
+	</body>
+</html>
