@@ -63,13 +63,13 @@
 		if((pars.pdf=="on"||pars.issuu=="on"||pars.xhtml=="on"||pars.lqpdf == "on")== false){
 			pars.pdf=pars.issuu=pars.xhtml=pars.lqpdf="on";
 		}
-		
+		let elts = [];
 		getThem();
 		function getThem(){
 			$.getJSON("/wakers/index.json", data);
 		}
+		const o = document.getElementById("o");
 		async function data(data){
-			let o = document.getElementById("o");
 			o.innerHTML = "";
 			data.forEach(async doc=>{
 				let include = false;
@@ -98,7 +98,7 @@
 					
 					
 					tmp0.appendChild(tmp3);
-					o.appendChild(tmp0);
+					add({tmp0, n: doc.n});
 				}
 			});
 		}
@@ -122,6 +122,13 @@
 				out= await data.thumbnail_url;
 			});
 			return out;
+		}
+		
+		function add(elt){
+			elts.push(elt);
+			elts.sort((a,b)=>a.n-b.n);
+			o.innerHTML = "";
+			elts.forEach(e=>o.appendChild(e.tmp0));
 		}
 		
     </script>
