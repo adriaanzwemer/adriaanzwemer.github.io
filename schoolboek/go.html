@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="nl-NL" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Miep</title>
+	</head>
+	<body>
+		<H1>Heeft u of uw school een licentie voor deze methode?</H1>
+		<button onClick="go();">Ja</button>
+		<button onClick="window.history.back();">Nee</button>
+		<script type="text/javascript">
+			function go(){
+				window.location.href = (new URL(window.location.href)).searchParams.get(`url`);// the fuck? why doesn't this work inline
+			}
+		</script>
+	</body>
+</html>

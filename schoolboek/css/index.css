@@ -1,0 +1,131 @@
+.subjectButt {
+	background: ForestGreen;
+	border-width: 0px;
+	border-radius: 5pt;
+	height: 30pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+	color: white;
+}
+.subjectButt:hover {
+	background: DarkGreen;
+	color: GhostWhite;
+	cursor: pointer;
+}
+button:hover {
+	cursor: pointer;
+}
+#main {
+	width: calc ( 100% - 16pt );
+	background: black;
+	padding: 8pt;
+}
+body {
+	margin: 0px;
+	background: #222222;
+}
+.subject {
+	width: calc ( 100% - 16pt );
+	background: #111111;
+	padding: 8pt;
+	color: white;
+	display: none;
+}
+.publication {
+	width: calc ( 100% - 16pt );
+	background: #222222;
+	padding: 8pt;
+	color: white;
+	display: none;
+}
+.edition {
+	width: calc ( 100% - 16pt );
+	background: #333333;
+	padding: 8pt;
+	color: white;
+	display: none;
+}
+.book {
+	cursor: pointer;
+}
+.book[data-full=""] {
+	background: red;
+}
+.book[data-full=""][data-borked][data-preview=""] {
+	background: DarkOrange;
+}
+.book[data-full]:not([data-full=""]){
+	background: DarkGreen;
+}
+.book[data-full]:not([data-full=""]):not([data-preview=""]){
+	background: Green;
+}
+.book[data-full=""][data-borked]:not([data-preview=""]) {
+	background: Orange;
+}
+
+#overlay {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#popup {
+	background: black;
+	width: 60%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	margin-top: 30vh;
+	border-radius: 10pt;
+}
+
+#popup > a {
+	border-radius: 5pt;
+	padding-left: 2.5pt;
+	padding-right: 2.5pt;
+	margin-right: 1pt;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+}
+.borked {
+	background: DarkOrange;
+}
+.borked:hover {
+	background: OrangeRed;
+}
+.preview {
+	background: Blue;
+}
+.preview:hover {
+	background: DarkBlue;
+}
+.full {
+	background: Green;
+}
+.full:hover {
+	background: DarkGreen;
+}
+.altver {
+	background: DarkGreen;
+}
+.altver:hover {
+	background: SeaGreen;
+}
+.preview.borked {
+	background: Red;
+}
+.preview.borked:hover {
+	background: DarkRed;
+}
+
+
+.selected {
+	display: block;
+}
